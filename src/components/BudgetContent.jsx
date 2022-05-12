@@ -1,5 +1,9 @@
 import CardBudget from "./CardBudget";
+import { ChartEvent } from "./ChartEvent";
+import { DoughnutChart } from "./DoughnutChart";
+import { LineChart } from "./LineChart";
 import Map from "./Map";
+import Title from "./Title";
 
 export default function BudgetContent() {
   const dummyData = [
@@ -40,12 +44,17 @@ export default function BudgetContent() {
         })}
       </div>
       <div className="flex px-3 pt-4 space-x-4">
-          <div className="w-1/2 border">
-              <Map/>
+        <div className="w-1/2 border">
+          <Map />
+        </div>
+        <div className="w-1/2 flex flex-col">
+          <div className="bg-gray-100">
+            <Title text={"PROFILE BIAYA"} />
           </div>
-          <div className="w-1/2">
-              Right
-          </div>
+          <ChartEvent />
+          <LineChart />
+          <DoughnutChart />
+        </div>
       </div>
     </>
   );

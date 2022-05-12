@@ -1,6 +1,6 @@
 
 import Home from './pages/Home';
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 import Budget from './pages/Budget';
 function App() {

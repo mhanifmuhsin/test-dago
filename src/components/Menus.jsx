@@ -2,11 +2,11 @@ import { useLocation } from "react-router-dom";
 export default function Menus() {
   const location = useLocation();
   return (
-    <div className="px-3 flex justify-between py-3">
+    <div className="px-3 md:flex justify-between py-3">
       <span>{location.pathname === "/budget" ? "Budget" : "Dashboard"}</span>
-      <div className="flex space-x-7">
+      <div className="md:flex space-x-7">
         {location.pathname === "/" && (
-          <div className="flex space-x-3">
+          <div className="flex justify-center space-x-3">
             <div className="flex space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function Menus() {
             </div>
           </div>
         )}
-        <div className="flex">
+        <div className="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -49,7 +49,7 @@ export default function Menus() {
           </svg>
           <span>Update at (01-06-2022)</span>
         </div>
-        <div className="flex">
+        <div className="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"

@@ -37,16 +37,16 @@ export default function BudgetContent() {
   ];
   return (
     <>
-      <div className="flex justify-around px-3 space-x-2">
+      <div className="w-full md:flex justify-around px-3 md:space-x-2">
         {dummyData.map((data, index) => {
           return <CardBudget title={data.title} value={data.value} />;
         })}
       </div>
-      <div className="flex px-3 pt-4 space-x-4">
-        <div className="w-1/2 border">
+      <div className="w-full md:flex px-3 pt-4 md:space-x-4">
+        <div className="w-full md:w-1/2 border">
           <Map />
         </div>
-        <div className="w-1/2 flex flex-col">
+        <div className="w-full md:w-1/2 md:flex md:flex-col">
           <div className="bg-gray-100">
             <Title text={"PROFILE BIAYA"} />
           </div>

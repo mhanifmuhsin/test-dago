@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <div className="px-3 py-3">
-      <div className="flex justify-between border-b py-2">
+      <div className="md:flex justify-between border-b py-2 ">
         <div>Managerial Dashboard V.10</div>
         <div className="flex space-x-10">
           <div className="flex">

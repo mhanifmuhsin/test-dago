@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -6,10 +6,20 @@ export default function Navigation() {
       <nav>
         <ul className="flex space-x-3">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink style={({ isActive }) => {
+              return {
+                display: "block",
+                borderBottom: isActive ? "5px solid gray":""
+              };
+            }} to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/budget">Budget</Link>
+            <NavLink style={({ isActive }) => {
+              return {
+                display: "block",
+                borderBottom: isActive ? "5px solid gray":""
+              };
+            }} to="/budget">Budget</NavLink>
           </li>
         </ul>
       </nav>

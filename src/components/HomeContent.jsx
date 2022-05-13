@@ -3,6 +3,7 @@ import CardBar from "./CardBar";
 import Title from "./Title";
 import Map from "../components/Map";
 import { DoughnutChart } from "./DoughnutChart";
+import CardMaintenance from "./CardMaintenance";
 
 export default function HomeContent() {
   return (
@@ -12,7 +13,7 @@ export default function HomeContent() {
           <div className="bg-gray-100 flex justify-center">
             <Title text={"Volume"} />
           </div>
-          <div className="space-y-4c">
+          <div className="space-y-4">
             <CardBar />
             <CardBar />
             <CardBar />
@@ -43,10 +44,16 @@ export default function HomeContent() {
           </div>
         </>
       </div>
-      <div className="w-2/6">
+      <div className="w-2/6 space-y-4">
         <Card />
         <Card />
         <Card />
+        <div className="bg-gray-100 flex justify-center">
+          <Title text={"Maintenance Highlight"}/>
+        </div>
+        <CardMaintenance/>
+        <CardMaintenance/>
+        <CardMaintenance/>
       </div>
     </div>
   );

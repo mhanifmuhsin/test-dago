@@ -1,8 +1,15 @@
+import { ChartEvent } from "./ChartEvent";
+
 export default function CardBar() {
   return (
-    <div>
+    <div className="border p-3">
       <div className="flex justify-between">
-        <span>Existing Gas</span>
+        <div className="flex flex-col">
+          <div className="max-w-xs">
+            <ChartEvent />
+          </div>
+          <span>Existing Gas</span>
+        </div>
         <div className="flex flex-col">
           <svg
             xmlns="http://www.w3.org/2000/svg"

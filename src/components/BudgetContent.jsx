@@ -1,6 +1,5 @@
 import CardBudget from "./CardBudget";
 import { ChartEvent } from "./ChartEvent";
-import { DoughnutChart } from "./DoughnutChart";
 import { LineChart } from "./LineChart";
 import Map from "./Map";
 import Title from "./Title";
@@ -51,9 +50,15 @@ export default function BudgetContent() {
           <div className="bg-gray-100">
             <Title text={"PROFILE BIAYA"} />
           </div>
-          <ChartEvent />
+          <div className="max-w-sm">
+            <ChartEvent />
+          </div>
+          <div className="max-w-sm">
+            <LineChart />
+          </div>
+          <div className="max-w-sm">
           <LineChart />
-          <DoughnutChart />
+          </div>
         </div>
       </div>
     </>
